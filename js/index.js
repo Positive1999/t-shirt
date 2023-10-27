@@ -16,6 +16,7 @@
            priceProduct.innerHTML = `${e.price}`;
            
            var listProducts = document.createElement('div');
+           listProducts.classList.add('product');
            listProducts.appendChild(titleProduct);
            listProducts.appendChild(imgProduct);
            listProducts.appendChild(priceProduct);
