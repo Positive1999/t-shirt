@@ -1,0 +1,14 @@
+{
+    "kids" : [
+        {
+            "name" : "Áo thun",
+            "image" : "data/images/men/1.jpg",
+            "price" : "50.000 đ"
+        },
+        {
+            "name" : "Áo thun 2",
+            "image" : "data/images/men/2.jpg",
+            "price" : "60.000 đ"
+        }
+    ]
+}
