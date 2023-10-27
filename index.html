@@ -19,9 +19,9 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" id="toggle-icon"></span>
             </button>
-    
+
             <a class="navbar-brand fw-bolder" href="#">T-SHIRT</a>
-    
+
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -41,10 +41,26 @@
             </div>
         </nav>
     </div>
- 
-    <div class="mt-5 text-center" id="men" ></div>
+
+    <div class="mt-5 text-center" id="men"></div>
+
+    <div class="container">
+        <i id="arrow-top" class="fa-solid fa-arrow-up"></i>
+    </div>
 
     <script>
+        window.addEventListener("scroll", function () {
+            var arrowTop = document.getElementById("arrow-top");
+            if (window.pageYOffset > 300) {
+                arrowTop.style.display = "block";
+            } else {
+                arrowTop.style.display = "none";
+            }
+        });
+
+        document.getElementById("arrow-top").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
         $(document).ready(function () {
             $('.navbar-toggler').click(function () {
                 $('#navbarNav').toggleClass('show');
