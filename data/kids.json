@@ -1,14 +1,54 @@
 {
-    "kids" : [
-        {
-            "name" : "Áo thun",
-            "image" : "data/images/men/1.jpg",
-            "price" : "50.000 đ"
-        },
-        {
-            "name" : "Áo thun 2",
-            "image" : "data/images/men/2.jpg",
-            "price" : "60.000 đ"
-        }
+    "kids": [
+      {
+        "name": "Áo thun trắng",
+        "image": "data/images/clothes/children/shirt-white.jpg",
+        "price": 14.99
+      },
+      {
+        "name": "Quần jeans đen",
+        "image": "data/images/clothes/children/jeans-black.jpg",
+        "price": 24.99
+      },
+      {
+        "name": "Áo khoác nỉ xám",
+        "image": "data/images/clothes/children/hoodie-gray.jpg",
+        "price": 19.99
+      },
+      {
+        "name": "Váy hoa nhí",
+        "image": "data/images/clothes/children/floral-dress.jpg",
+        "price": 29.99
+      },
+      {
+        "name": "Áo sơ mi trắng",
+        "image": "data/images/clothes/children/white-shirt.jpg",
+        "price": 19.99
+      },
+      {
+        "name": "Quần shorts jeans",
+        "image": "data/images/clothes/children/jeans-shorts.jpg",
+        "price": 14.99
+      },
+      {
+        "name": "Áo len đỏ",
+        "image": "data/images/clothes/children/red-sweater.jpg",
+        "price": 16.99
+      },
+      {
+        "name": "Đầm dạo phố hồng",
+        "image": "data/images/clothes/children/pink-dress.jpg",
+        "price": 24.99
+      },
+      {
+        "name": "Áo phông đen",
+        "image": "data/images/clothes/children/black-t-shirt.jpg",
+        "price": 12.99
+      },
+      {
+        "name": "Quần kaki xanh",
+        "image": "data/images/clothes/children/green-khaki-pants.jpg",
+        "price": 19.99
+      }
     ]
-}
+  }
