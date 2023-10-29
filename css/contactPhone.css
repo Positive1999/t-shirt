@@ -1,10 +1,10 @@
-.contact-phone {
+.contact-phone[title] {
     position: fixed;
     bottom: 10px;
     left: 20px;
     border-radius: 30px;
     padding: 8px 12px;
-    background-color: #ffffff;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,3 +44,10 @@
 }
 
 /* het contact-phone */
+
+
+.contact-phone[title] {
+  color: #ff0000;
+  font-size: 16px;
+  /* Các thuộc tính CSS khác */
+}
