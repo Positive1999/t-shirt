@@ -18,7 +18,7 @@
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 fixed-top ">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" id="toggle-icon"></span>
@@ -45,27 +45,32 @@
             </div>
         </nav>
     </div>
+    <!-- het navbar -->
 
     <div class="container-fluid">
-        <img width="100%" src="data/images/men/banner.jpg" alt='banner'>
+        <img width="100%" src="data/images/men/banner4.jpg" alt='banner'>
     </div>
-    <div class="container mt-5" id="men"></div>
+    <!-- het banner -->
 
-    <div class="container">
-        <div class="contact-phone" onclick="makeCall('0375811525')">
+    <div class="container mt-5" id="men"></div>
+    <!-- het san phẩm -->
+
+    <div class="container" >
+        <div class="contact-phone" onclick="makeCall('0375811525')" title="0375811525">
             <div class="circle">
                 <i class="fa-solid fa-phone"></i>
             </div>
-            <div class="sdt" ></div>
+            <div class="sdt d-none">0375811525</div>
         </div>
         <!-- het contact phone -->
         <i id="arrow-top" class="fa-solid fa-arrow-up"></i>
+        <!-- het arrow up -->
     </div>
 
     <script>
         window.addEventListener("scroll", function () {
             var arrowTop = document.getElementById("arrow-top");
-            if (window.pageYOffset > 300) {
+            if (window.pageYOffset > 350) {
                 arrowTop.style.display = "block";
             } else {
                 arrowTop.style.display = "none";
