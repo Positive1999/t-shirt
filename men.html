@@ -16,46 +16,7 @@
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/contactPhone.css">
     <link rel="stylesheet" href="css/arrowUp.css">
-    <style>
-  #myVideoContainer {
-    position: relative;
-    display: inline-block;
-  }
-
-  #myVideo {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  #myButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-    display: none;
-  }
-
-  #myTime {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    font-size: 14px;
-  }
-
-  #myVideoContainer:hover #myButton {
-    display: block;
-  }
-      </style>
 </head>
-
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 fixed-top ">
@@ -159,56 +120,12 @@
                 </div>
             </div>
         </footer>
-        <div id="myVideoContainer">
-            <video id="myVideo" src="data/video/VetNangCuoiTroi.mp4"></video>
-            <button id="myButton" onclick="togglePlayPause()"><i class="fa-solid fa-play"></i></button>
-            <div id="myTime">00:00 / 00:00</div>
-          </div>
-
-
     </div>
     <!-- het footer -->
 
     <script src="js/index.js"></script>
     <script src="js/contactPhone.js"></script>
     <script src="js/scoll-arrow.js"></script>
-
-      
-      <script>
-        var video = document.getElementById("myVideo");
-        var playButton = document.getElementById("myButton");
-        var timeDisplay = document.getElementById("myTime");
-      
-        video.addEventListener("loadedmetadata", function() {
-          var duration = video.duration;
-          var formattedDuration = formatTime(duration);
-          timeDisplay.textContent = "00:00 / " + formattedDuration;
-        });
-      
-        video.addEventListener("timeupdate", function() {
-          var currentTime = video.currentTime;
-          var formattedCurrentTime = formatTime(currentTime);
-          var duration = video.duration;
-          var formattedDuration = formatTime(duration);
-          timeDisplay.textContent = formattedCurrentTime + " / " + formattedDuration;
-        });
-      
-        function formatTime(time) {
-          var minutes = Math.floor(time / 60);
-          var seconds = Math.floor(time % 60);
-          minutes = minutes < 10 ? "0" + minutes : minutes;
-          seconds = seconds < 10 ? "0" + seconds : seconds;
-          return minutes + ":" + seconds;
-        }
-      
-        function togglePlayPause() {
-          if (video.paused) {
-            video.play();
-          } else {
-            video.pause();
-          }
-        }
-      </script>
 </body>
 
 </html>
