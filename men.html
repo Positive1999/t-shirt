@@ -69,27 +69,9 @@
         <!-- het arrow up -->
     </div>
 
-    <script>
-        window.addEventListener("scroll", function () {
-            var arrowTop = document.getElementById("arrow-top");
-            if (window.pageYOffset > 350) {
-                arrowTop.style.display = "block";
-            } else {
-                arrowTop.style.display = "none";
-            }
-        });
-
-        document.getElementById("arrow-top").addEventListener("click", function () {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-        $(document).ready(function () {
-            $('.navbar-toggler').click(function () {
-                $('#navbarNav').toggleClass('show');
-            });
-        });
-    </script>
     <script src="js/index.js"></script>
     <script src="js/contactPhone.js"></script>
+    <script src="js/scoll-arrow.js"></script>
 </body>
 
 </html>
