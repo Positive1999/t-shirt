@@ -1,0 +1,23 @@
+#men{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product{
+    padding: 18px;
+}
+.product:hover img{
+    border: 1px solid grey;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.product h3{
+    height:30px;
+    font-size: 16px;
+}
+.product img{
+    width: 100%;
+}
+.product p{
+    color:red;
+}

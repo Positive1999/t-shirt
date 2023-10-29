@@ -1,43 +1,5 @@
-#men{
-    display: flex;
-    flex-wrap: wrap;
-}
-.product{
-    padding: 18px;
-    width: 100%;
 
-}
-.product h3{
-    height:30px;
-    font-size: 16px;
-}
 
-.product img{
-    height:200px
-}
-.cart {
-    position: relative;
-}
-.cart-counter {
-    position: absolute;
-    top: 0px;
-    right: -5px;
-    background-color: red;
-    color: white;
-    font-size: 10px;
-    padding: 2px 5px;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
-}
 
-#arrow-top{
-    position: fixed;
-    bottom:20px;
-    right:30px;
-    border:1px solid black;
-    background-color: black;
-    color:white;
-    padding: 20px;
-    border-radius: 50%;
-}
+
 
