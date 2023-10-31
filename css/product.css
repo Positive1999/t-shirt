@@ -1,4 +1,4 @@
-#men{
+#home, #men {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -20,4 +20,9 @@
 }
 .product p{
     color:red;
+}
+
+.chuabtn{
+    display: flex;
+    justify-content: center;
 }

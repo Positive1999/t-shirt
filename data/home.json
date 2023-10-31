@@ -1,0 +1,50 @@
+{
+    "home": [
+        
+        {
+            "name": "Áo khoác",
+            "image": "data/images/men/5.jpg",
+            "price": "150.000 đ"
+        },
+        {
+            "name": "Áo khoác da",
+            "image": "data/images/men/6.jpg",
+            "price": "500.000 đ"
+        },
+        {
+            "name": "Quần tây",
+            "image": "data/images/men/7.jpg",
+            "price": "300.000 đ"
+        },
+        {
+            "name": "Áo len",
+            "image": "data/images/men/8.jpg",
+            "price": "250.000 đ"
+        },
+        {
+            "name": "Áo hoodie",
+            "image": "data/images/men/9.jpg",
+            "price": "400.000 đ"
+        },
+        {
+            "name": "Quần kaki",
+            "image": "data/images/men/10.jpg",
+            "price": "350.000 đ"
+        },
+        {
+            "name": "Quần Jogger",
+            "image": "data/images/men/12.jpg",
+            "price": "280.000 đ"
+        },
+        {
+            "name": "Áo sơ mi",
+            "image": "data/images/men/3.jpg",
+            "price": "120.000 đ"
+        },
+        {
+            "name": "Quần jean",
+            "image": "data/images/men/4.jpg",
+            "price": "200.000 đ"
+        }
+    ]
+}

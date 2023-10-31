@@ -1,9 +1,9 @@
-fetch('data/men.json')
+fetch('data/home.json')
     .then(response => response.json())
     .then(data => {
-        const listPro = document.getElementById('men');
+        const listPro = document.getElementById('home');
         listPro.classList.add('container');
-        const menArray = data.men;
+        const menArray = data.home;
         menArray.forEach(e => {
             const titleProduct = document.createElement('h3');
             titleProduct.innerHTML = `${e.name}`;
@@ -20,8 +20,7 @@ fetch('data/men.json')
             quantityInput.placeholder = 'Số lượng';
             // het nhap so luong
 
-           
-
+         
             const btnProduct = document.createElement('button');
             btnProduct.classList.add('cartButton');
 
