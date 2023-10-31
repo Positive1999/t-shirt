@@ -1,10 +1,13 @@
-#home, #men {
+#home, #men, #women, #kids {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .product{
     padding: 18px;
+    text-align: center;
+    margin: 20px 0;
+    width: 241px;
 }
 .product:hover{
     border: 1px solid grey;
@@ -16,6 +19,7 @@
 }
 .product img{
     width: 100%;
+    height:280px;
 }
 .product p{
     color:red;
@@ -24,4 +28,46 @@
 .chuabtn{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.product .cartButton{
+    margin-top:20px;
+}
+.inputQuantity{
+    width: 100%;
+}
+
+.cartButton {
+    position: relative;
+    background-color: #f1f1f1;
+    color: rgb(39, 39, 39);
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 180px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fa-shopping-cart {
+    margin-right: 5px;
+    font-size: 30px;
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+span {
+    transition: 0.5s;
+}
+
+.cartButton.clicked .fa-shopping-cart {
+    transform: translateX(0%);
+}
+
+.color {
+    color: rgb(0, 175, 0);
+    font-weight: 500;
 }

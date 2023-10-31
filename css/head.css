@@ -12,3 +12,11 @@
     border-radius: 50%;
     transform: translate(50%, -50%);
 }
+
+.cart-item{
+    /* display: none; */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 400px;
+    height: 300px; 
+}

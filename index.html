@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contactPhone.css">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/contactPhone.css">
     <link rel="stylesheet" href="css/arrowUp.css">
 </head>
 
@@ -43,9 +42,16 @@
                 </ul>
             </div>
             <div class="cart">
-                <i class="fas fa-cart-shopping"></i>
-                <span class="cart-counter">0</span>
+                <a style="text-decoration: none; color:black" href="">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span class="cart-counter">0</span>
+                </a>
+                <div style="display: none;" class="cart-item">
+                    <span class="item-name"></span>
+                    <span class="item-price"></span>
+                </div>
             </div>
+
         </nav>
     </div>
     <!-- het navbar -->
@@ -59,6 +65,8 @@
         <input style="outline: none; border: none; border-bottom: 1px solid grey" type="text"
             placeholder="Tên sản phẩm"><i class="fa-solid fa-magnifying-glass"></i>
     </div>
+    <!-- het search -->
+
     <div class="container mt-5" id="home"></div>
     <!-- het san phẩm -->
 
@@ -130,9 +138,8 @@
     <!-- het footer -->
 
     <script src="js/scoll-arrow.js"></script>
-    <script src="js/index2.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/contactPhone.js"></script>
-
 
 </body>
 
