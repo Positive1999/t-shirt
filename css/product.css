@@ -6,9 +6,8 @@
 .product{
     padding: 18px;
 }
-.product:hover img{
+.product:hover{
     border: 1px solid grey;
-    transform: scale(1.01);
     border-radius: 10px;
 }
 .product h3{
