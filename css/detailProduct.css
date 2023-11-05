@@ -24,6 +24,13 @@
     margin-top: 20px;
   }
 
+  .cart-item-list img{
+    width: 10%;
+  }
+
+
+
+
   .cart-item-details {
     text-align: center;
   }
