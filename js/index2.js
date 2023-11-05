@@ -87,26 +87,68 @@ fetch('data/home.json')
     function updateCartCounter() {
       const cartCounter = document.querySelector('.cart-counter');
       cartCounter.textContent = cartItems.length;
-
-         // Function để hiển thị phần cart-item và làm màn hình web tối đi
-    function showCart() {
-        const cartItem = document.querySelector('.cart-item');
-        const backdrop = document.createElement('div');
-        backdrop.classList.add('backdrop');
-        document.body.appendChild(backdrop);
-        document.body.style.overflow = 'hidden';
-  
-        cartItem.style.display = 'block';
-      }
-
-      // Function để ẩn phần cart-item và đưa màn hình web về trạng thái ban đầu
-      function hideCart() {
-        const cartItem = document.querySelector('.cart-item');
-        const backdrop = document.querySelector('.backdrop');
-        document.body.removeChild(backdrop);
-        document.body.style.overflow = '';
-  
-        cartItem.style.display = 'none';
-      }
     }
   });
+
+
+// Function để hiển thị phần cart-item và làm màn hình web tối đi
+  // Sample cartItems array with some selected products
+  function showCart() {
+    const cartItem = document.querySelector('.cart-item');
+    const backdrop = document.createElement('div');
+    backdrop.classList.add('backdrop');
+    document.body.appendChild(backdrop);
+    document.body.style.overflow = 'hidden';
+  
+    // Clear the previous cart item details
+    cartItem.innerHTML = '';
+  
+    fetch('data/home.json')
+      .then(response => response.json())
+      .then(data => {
+        const cartItems = data.selectedProducts;
+  
+        if (cartItems.length === 0) {
+          const message = document.createElement('span');
+          message.textContent = 'Bạn chưa chọn sản phẩm nào.';
+          cartItem.appendChild(message);
+        } else {
+          // Loop through the selected products in the cart and display their details
+          cartItems.forEach(selectedProduct => {
+            const item = document.createElement('div');
+            item.classList.add('cart-item-details');
+  
+            const itemName = document.createElement('span');
+            itemName.textContent = selectedProduct.name;
+  
+            const itemImage = document.createElement('img');
+            itemImage.src = selectedProduct.image;
+            itemImage.alt = selectedProduct.name;
+  
+            const itemPrice = document.createElement('span');
+            itemPrice.textContent = selectedProduct.price;
+  
+            item.appendChild(itemName);
+            item.appendChild(itemImage);
+            item.appendChild(itemPrice);
+  
+            cartItem.appendChild(item);
+          });
+        }
+  
+        cartItem.style.display = 'block';
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }
+
+// Function để ẩn phần cart-item và đưa màn hình web về trạng thái ban đầu
+function hideCart() {
+  const cartItem = document.querySelector('.cart-item');
+  const backdrop = document.querySelector('.backdrop');
+  document.body.removeChild(backdrop);
+  document.body.style.overflow = '';
+
+  cartItem.style.display = 'none';
+}

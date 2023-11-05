@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/contactPhone.css">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/detailProduct.css">
     <link rel="stylesheet" href="css/arrowUp.css">
 </head>
 
@@ -41,16 +42,19 @@
                     </li>
                 </ul>
             </div>
+
             <div class="cart">
-                <a style="text-decoration: none; color:black" href="">
-                    <i class="fas fa-cart-shopping"></i>
-                    <span class="cart-counter">0</span>
+                <a style="text-decoration: none; color: black" href="#">
+                  <i class="fas fa-cart-shopping"></i>
+                  <span class="cart-counter">0</span>
                 </a>
-                <div style="display: none;" class="cart-item">
-                    <span class="item-name"></span>
-                    <span class="item-price"></span>
+                <div class="cart-item">
+                  <h2>Chi tiết sản phẩm</h2><span onclick="hideCart()">X</span>
+                  <div class="cart-item-list"></div>
                 </div>
             </div>
+            <!-- cart and detail products -->
+          
 
         </nav>
     </div>
@@ -139,7 +143,7 @@
     <!-- het footer -->
 
     <script src="js/scoll-arrow.js"></script>
-    <script src="js/index2.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/contactPhone.js"></script>
 
 </body>
