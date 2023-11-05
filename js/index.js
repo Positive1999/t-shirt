@@ -92,18 +92,39 @@ fetch('data/home.json')
 
 // Function để hiển thị phần cart-item và làm màn hình web tối đi
 function showCart() {
-  const cartItem = document.querySelector('.cart-item');
-  // const backdrop = document.createElement('div');
-  // backdrop.classList.add('backdrop');
-  // document.body.appendChild(backdrop);
-  // document.body.style.overflow = 'hidden';
+  const cartItemList = document.querySelector('.cart-item-list');
+  const cartCounter = document.querySelector('.cart-counter');
 
-  cartItem.style.display = 'block';
+  if (cartCounter.textContent === "0") {
+    // Create a new <p> element for empty cart message
+    const emptyCartMessage = document.createElement('p');
+    emptyCartMessage.textContent = 'Giỏ hàng rỗng!';
+    emptyCartMessage.style.color = 'black';
+
+    // Clear any existing cart items
+    cartItemList.innerHTML = '';
+
+    // Append the empty cart message to cartItemList
+    cartItemList.appendChild(emptyCartMessage);
+  }else{
+    const emptyCartMessage = document.createElement('p');
+    emptyCartMessage.textContent = 'Sản phẩm của bạn ở đây !';
+    emptyCartMessage.style.color = 'black';
+
+    // Clear any existing cart items
+    cartItemList.innerHTML = '';
+
+    // Append the empty cart message to cartItemList
+    cartItemList.appendChild(emptyCartMessage);
+  }
+
+  // Show the cart item
+  cartItemList.style.display = 'block';
 }
 
 // Function để ẩn phần cart-item và đưa màn hình web về trạng thái ban đầu
 function hideCart() {
-  var cartItem = document.querySelector('.cart-item');
+  const cartItem = document.querySelector('.cart-item');
   cartItem.style.display = 'none';
 
   var overlay = document.querySelector('.overlay');
