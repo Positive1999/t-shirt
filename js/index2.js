@@ -266,7 +266,7 @@ fetch('data/home.json')
         }
 
         updateCartCounter();
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
       });
     });
 
@@ -290,11 +290,12 @@ function showCart() {
   cartItemList.style.display = 'block';
 
   // Hiển thị sản phẩm từ localStorage
-  const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  const storedCartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
   storedCartItems.forEach(item => {
     const listItem = document.createElement('div');
     const listItemImg = document.createElement('img');
     const listItemPrice = document.createElement('div');
+    listItemPrice.classList.add('detailPrice');
     listItem.textContent = item.name;
     listItemImg.src = item.image;
     listItemPrice.textContent = item.price;

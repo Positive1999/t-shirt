@@ -25,7 +25,10 @@
   }
 
   .cart-item-list img{
-    width: 10%;
+    width: 20%;
+  }
+  .cart-item-list .detailPrice{
+    color:red;
   }
 
 
