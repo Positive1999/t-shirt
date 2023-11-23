@@ -8,6 +8,7 @@ function renderCartItems() {
 
   products.forEach(function(product, index) {
     var productDiv = document.createElement("div");
+    productDiv.classList.add('productItem');
 
     var productName = document.createElement("span");
     var productImage = document.createElement("img");
