@@ -19,10 +19,12 @@ function renderCartItems() {
       infoProduct.classList.add("col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
 
       var productName = document.createElement("h5");
+      var productQuantity = document.createElement("input");
       var productPrice = document.createElement("p");
       var productRemove = document.createElement("button");
 
       productName.textContent = product.name;
+      productQuantity.placeholder = "Số lượng ...";
       productImage.src = product.image;
       productPrice.textContent = product.price;
 
@@ -46,6 +48,7 @@ function renderCartItems() {
       });
 
       infoProduct.appendChild(productName);
+      infoProduct.appendChild(productQuantity);
       infoProduct.appendChild(productPrice);
       infoProduct.appendChild(productRemove);
 

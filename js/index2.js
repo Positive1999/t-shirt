@@ -12,7 +12,6 @@ fetch('data/home.json')
         <h3>${e.name}</h3>
         <img src="${e.image}">
         <p>${e.price}</p>
-        <input class="inputQuantity" placeholder="Số lượng">
         <div class="chuabtn">
           <button class="cartButton">
             <i class="fas fa-shopping-cart"></i>
