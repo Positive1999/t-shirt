@@ -56,10 +56,15 @@ function renderCartItems() {
     });
 
     totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
+if(products && products.length > 0){
+  var bookProduct = document.createElement("button");
+  bookProduct.textContent= ' Đặt hàng';
+  bookProducts.appendChild(bookProduct)
+}else{
+  bookProducts.textContent = ''; 
+}
 
-    var bookProduct = document.createElement("button");
-    bookProduct.textContent= ' Đặt hàng';
-    bookProducts.appendChild(bookProduct)
+
 
   } else {
     var emptyCartMessage = document.createElement("p");
