@@ -52,14 +52,14 @@ function renderCartItems() {
       container.appendChild(productDiv);
 
 
-      var bookProduct = document.createElement("button");
-      bookProducts.textContent= ' Đặt hàng';
 
-      bookProducts.appendChild(bookProduct)
     });
 
     totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
 
+    var bookProduct = document.createElement("button");
+    bookProduct.textContent= ' Đặt hàng';
+    bookProducts.appendChild(bookProduct)
 
   } else {
     var emptyCartMessage = document.createElement("p");
