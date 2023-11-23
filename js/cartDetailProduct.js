@@ -2,10 +2,7 @@ var container = document.getElementById("cart-item-list");
 var totalPrice = document.getElementById("totalPrice");
 var bookProducts = document.getElementById("bookProducts");
 
-
 function renderCartItems() {
-  container.innerHTML = ""; // Xóa các sản phẩm hiện tại trên giao diện trước khi render lại
-
   var productsData = sessionStorage.getItem("cartItems");
   var products = JSON.parse(productsData);
   var total = 0; // Tổng đơn hàng
@@ -13,10 +10,15 @@ function renderCartItems() {
   if (products && products.length > 0) {
     products.forEach(function (product, index) {
       var productDiv = document.createElement("div");
-      productDiv.classList.add('productItem');
+      productDiv.classList.add("productItem", "row");
+
+      var productImage = document.createElement("img");
+      productImage.classList.add("col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
+
+      var infoProduct = document.createElement('div');
+      infoProduct.classList.add("col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
 
       var productName = document.createElement("h5");
-      var productImage = document.createElement("img");
       var productPrice = document.createElement("p");
       var productRemove = document.createElement("button");
 
@@ -28,7 +30,7 @@ function renderCartItems() {
       var priceValue = parseFloat(product.price.replace(/\./g, "").replace(" đ", ""));
       total += priceValue; // Tính tổng giá trị đơn hàng
 
-      productRemove.textContent = 'Delete';
+      productRemove.textContent = 'XÓA';
 
       // Thêm sự kiện nghe cho nút "Delete product"
       productRemove.addEventListener('click', function () {
@@ -43,34 +45,29 @@ function renderCartItems() {
         totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
       });
 
-      productDiv.appendChild(productName);
+      infoProduct.appendChild(productName);
+      infoProduct.appendChild(productPrice);
+      infoProduct.appendChild(productRemove);
+
       productDiv.appendChild(productImage);
-      productDiv.appendChild(productPrice);
-      productDiv.appendChild(productRemove);
-      productDiv.appendChild(productRemove);
+      productDiv.appendChild(infoProduct);
 
       container.appendChild(productDiv);
-
-
-
     });
 
     totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
-if(products && products.length > 0){
-  var bookProduct = document.createElement("button");
-  bookProduct.textContent= ' Đặt hàng';
-  bookProducts.appendChild(bookProduct)
-}else{
-  bookProducts.textContent = ''; 
-}
-
-
-
+    if (products && products.length > 0) {
+      var bookProduct = document.createElement("button");
+      bookProduct.textContent = ' Đặt hàng';
+      bookProducts.appendChild(bookProduct);
+    } else {
+      bookProducts.textContent = '';
+    }
   } else {
     var emptyCartMessage = document.createElement("p");
-    emptyCartMessage.textContent = "Giỏ hàng trống !";
+    emptyCartMessage.classList.add('cart-empty');
+    emptyCartMessage.textContent = "Giỏ hàng trống!";
     container.appendChild(emptyCartMessage);
-    totalPrice.textContent = 'Tổng đơn hàng: 0 đ'; // Đặt tổng là 0 nếu giỏ hàng trống
   }
 }
 
@@ -84,5 +81,4 @@ function formatMoney(amount) {
 }
 
 renderCartItems();
-
 
