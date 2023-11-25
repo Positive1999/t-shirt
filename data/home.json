@@ -1,6 +1,5 @@
 {
     "home": [
-        
         {
             "sale" : "-5%",
             "name": "Áo khoác",
@@ -24,45 +23,45 @@
         },
         {
             "sale" : "-10%",
-            "name": "Áo len",
-            "image": "data/images/men/8.jpg",
-            "price": "250.000 đ",
+            "name": "Áo khoác nỉ xám",
+            "image": "data/images/women/3.jpg",
+            "price": "500.000 đ",
             "des": "Vải đẹp , chất lượng tốt ! cam kết đổi trả 100% khi không đúng như ảnh."
         },
         {
             "sale" : "-10%",
-            "name": "Áo hoodie",
-            "image": "data/images/men/9.jpg",
-            "price": "400.000 đ",
+            "name": "Váy xòe trắng",
+            "image": "data/images/women/5.jpg",
+            "price": "300.000 đ",
+            "des": "Vải đẹp , chất lượng tốt ! cam kết đổi trả 100% khi không đúng như ảnh."
+        },
+        {
+            "sale": "-6%",
+            "name": "Áo thun trắng",
+            "image": "data/images/women/1.jpg",
+            "des": "Vải chất lượng , 100% như ảnh",
+            "price": "300.000 đ"
+        },
+        {
+            "sale" : "-10%",
+            "name": "Áo khoác nỉ xám",
+            "image": "data/images/kids/1.jpg",
+            "price":"300.000 đ",
             "des": "Vải đẹp , chất lượng tốt ! cam kết đổi trả 100% khi không đúng như ảnh."
         },
         {
             "sale" : "-10%",
-            "name": "Quần kaki",
-            "image": "data/images/men/10.jpg",
-            "price": "350.000 đ",
+            "name": "Váy xòe trắng",
+            "image": "data/images/kids/2.jpg",
+            "price": "300.000 đ",
             "des": "Vải đẹp , chất lượng tốt ! cam kết đổi trả 100% khi không đúng như ảnh."
         },
         {
-             "sale" : "-10%", 
-            "name": "Quần Jogger",
-            "image": "data/images/men/12.jpg",
-            "price": "280.000 đ",
-            "des": "Vải đẹp , chất lượng tốt ! cam kết đổi trả 100% khi không đúng như ảnh."
-        },
-        {
-             "sale" : "-10%", 
-            "name": "Áo sơ mi",
-            "image": "data/images/men/3.jpg",
-            "price": "120.000 đ",
-            "des": "Vải đẹp , chất lượng tốt ! cam kết đổi trả 100% khi không đúng như ảnh."
-        },
-        {
-             "sale" : "-10%", 
-            "name": "Quần jean",
-            "image": "data/images/men/4.jpg",
-            "price": "200.000 đ",
-            "des": "Vải đẹp , chất lượng tốt ! cam kết đổi trả 100% khi không đúng như ảnh."
+            "sale": "-6%",
+            "name": "Áo thun trắng",
+            "image": "data/images/kids/3.jpg",
+            "des": "Vải chất lượng , 100% như ảnh",
+            "price": "300.000 đ"
         }
     ]
 }

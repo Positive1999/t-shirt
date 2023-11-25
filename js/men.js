@@ -32,7 +32,7 @@ fetch('data/men.json')
       const text = cartButton.querySelector('span');
 
       cartButton.addEventListener('click', function () {
-        const selectedProduct = data.home[index];
+        const selectedProduct = data.men[index];
 
         if (cartButton.classList.contains('clicked')) {
           cartButton.classList.remove('clicked');

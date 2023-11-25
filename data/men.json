@@ -1,9 +1,11 @@
 {
     "men" : [
         {
+            "sale":"-6%",
             "name" : "Áo thun",
             "image" : "data/images/men/1.jpg",
-            "price" : "50.000 đ"
+            "price" : "50.000 đ",
+            "des":"Vải đẹp, chất lượng."
         },
         {
             "name" : "Áo thun dài tay",

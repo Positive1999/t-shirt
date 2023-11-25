@@ -3,7 +3,7 @@ var totalPrice = document.getElementById("totalPrice");
 var bookProducts = document.getElementById("bookProducts");
 
 function renderCartItems() {
-  var productsData = sessionStorage.getItem("cartItems");
+  var productsData = localStorage.getItem("cartItems");
   var products = JSON.parse(productsData);
   var total = 0; // Tổng đơn hàng
 
@@ -43,7 +43,7 @@ function renderCartItems() {
         container.removeChild(productDiv);
         // Xóa sản phẩm khỏi sessionStorage
         products.splice(index, 1);
-        sessionStorage.setItem("cartItems", JSON.stringify(products));
+        localStorage.setItem("cartItems", JSON.stringify(products));
 
         // Cập nhật tổng giá trị đơn hàng sau khi xóa
         total -= priceValue;
