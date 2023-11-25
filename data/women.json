@@ -1,33 +1,35 @@
 {
     "women": [
         {
+            "sale": "-6%",
             "name": "Áo thun trắng",
-            "image": "data/images/clothes/shirt-white.jpg",
+            "image": "data/images/women/1.jpg",
+            "des": "Vải chất lượng , 100% như ảnh",
             "price": 19.99
         },
         {
             "name": "Quần jeans đen",
-            "image": "data/images/clothes/jeans-black.jpg",
+            "image": "data/images/women/2.jpg",
             "price": 39.99
         },
         {
             "name": "Áo khoác nỉ xám",
-            "image": "data/images/clothes/hoodie-gray.jpg",
+            "image": "data/images/women/3.jpg",
             "price": 29.99
         },
         {
             "name": "Váy hoa dài",
-            "image": "data/images/clothes/dress-floral.jpg",
+            "image": "data/images/women/4.jpg",
             "price": 49.99
         },
         {
             "name": "Áo sơ mi trắng",
-            "image": "data/images/clothes/shirt-white2.jpg",
+            "image": "data/images/women/5.jpg",
             "price": 34.99
         },
         {
             "name": "Quần kaki xanh",
-            "image": "data/images/clothes/khaki-pants.jpg",
+            "image": "data/images/women/6.jpg",
             "price": 44.99
         },
         {
