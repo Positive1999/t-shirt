@@ -1,11 +1,14 @@
 var container = document.getElementById("cart-item-list");
 var totalPrice = document.getElementById("totalPrice");
 var bookProducts = document.getElementById("bookProducts");
+var products = []; // Mảng chứa sản phẩm
 
 function renderCartItems() {
   var productsData = localStorage.getItem("cartItems");
-  var products = JSON.parse(productsData);
+  products = JSON.parse(productsData);
   var total = 0; // Tổng đơn hàng
+
+
 
   if (products && products.length > 0) {
     products.forEach(function (product, index) {
@@ -37,14 +40,23 @@ function renderCartItems() {
 
       productRemove.textContent = 'XÓA';
 
-      // Thêm sự kiện nghe cho nút "Delete product"
+      //btn xoa san pham
       productRemove.addEventListener('click', function () {
         // Xóa sản phẩm khỏi giao diện
-        container.removeChild(productDiv);
-        // Xóa sản phẩm khỏi sessionStorage
+        productDiv.remove();
+      
+        // Xóa sản phẩm khỏi mảng bằng cách sử dụng index
         products.splice(index, 1);
-        localStorage.setItem("cartItems", JSON.stringify(products));
-
+      
+        // Kiểm tra số lượng sản phẩm trong mảng
+        if (products.length === 0) {
+          // Xóa khóa "cartItems" khỏi localStorage
+          localStorage.removeItem("cartItems");
+        } else {
+          // Ghi đè lên localStorage với mảng products mới
+          localStorage.setItem("cartItems", JSON.stringify(products));
+        }
+      
         // Cập nhật tổng giá trị đơn hàng sau khi xóa
         total -= priceValue;
         totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
@@ -73,7 +85,9 @@ function renderCartItems() {
   } else {
     var emptyCartMessage = document.createElement("p");
     emptyCartMessage.classList.add('cart-empty');
-    emptyCartMessage.textContent = "Giỏ hàng trống!";
+    emptyCartMessage.innerHTML = 
+    `<i class="fa fa-cart-shopping"></i> giỏ hàng trống !`;
+
     container.appendChild(emptyCartMessage);
   }
 }
@@ -88,4 +102,7 @@ function formatMoney(amount) {
 }
 
 renderCartItems();
+
+
+
 
