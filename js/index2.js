@@ -9,10 +9,10 @@ fetch('data/home.json')
       listProducts.classList.add('product', 'col-xs-12', 'col-sm-6', 'col-md-4', 'col-lg-3');
 
       listProducts.innerHTML = `
-      <div class="sale">-10%</div>
+      <div class="sale">${e.sale}</div>
       <img src="${e.image}">
-        <h3>${e.name}</h3>
-        <p>${e.price}</p>
+        <h3 class="product-name">${e.name}</h3>
+        <p class="product-price">${e.price}</p>
         <div class="chuabtn">
           <button class="cartButton">
             <i class="fas fa-shopping-cart"></i>

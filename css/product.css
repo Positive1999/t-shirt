@@ -35,7 +35,7 @@
 .product:hover img{
     transform: scale(1.05);
 }
-.product h3{
+.product .product-name{
     height:30px;
     font-size: 16px;
     color:#333;
@@ -45,7 +45,7 @@
     height:66%;
     margin-bottom: 10px;
 }
-.product p{
+.product .product-price{
     color:red;
 }
 
