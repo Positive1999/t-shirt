@@ -17,6 +17,7 @@
     border: 1px solid rgba(128, 128, 128, 0.192);
     padding: 20px;
     margin: 20px;
+    position: relative;
 }
 
 .sale{
@@ -63,7 +64,7 @@
 }
 
 .cartButton {
-    position: relative;
+    position: absolute;
     background-color: #f1f1f1;
     color: rgb(39, 39, 39);
     font-size: 16px;
