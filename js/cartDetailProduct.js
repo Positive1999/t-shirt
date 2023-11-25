@@ -18,11 +18,14 @@ function renderCartItems() {
       var infoProduct = document.createElement('div');
       infoProduct.classList.add("col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
 
+      
+      var productDes = document.createElement("i");
       var productName = document.createElement("h5");
       var productQuantity = document.createElement("input");
       var productPrice = document.createElement("p");
       var productRemove = document.createElement("button");
 
+      productDes.textContent = product.des;
       productName.textContent = product.name;
       productQuantity.placeholder = "Số lượng ...";
       productImage.src = product.image;
@@ -47,6 +50,7 @@ function renderCartItems() {
         totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
       });
 
+      infoProduct.appendChild(productDes);
       infoProduct.appendChild(productName);
       infoProduct.appendChild(productQuantity);
       infoProduct.appendChild(productPrice);
