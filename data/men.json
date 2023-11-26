@@ -1,131 +1,179 @@
 {
-    "men" : [
+    "men": [
         {
-            "sale":"-6%",
-            "name" : "Áo thun",
-            "image" : "data/images/men/1.jpg",
-            "price" : "50.000 đ",
-            "des":"Vải đẹp, chất lượng."
+            "sale": "-6%",
+            "name": "Áo thun",
+            "image": "data/images/men/1.jpg",
+            "price": "50.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo thun dài tay",
-            "image" : "data/images/men/2.jpg",
-            "price" : "60.000 đ"
+            "sale": "-0%",
+            "name": "Áo thun dài tay",
+            "image": "data/images/men/2.jpg",
+            "price": "60.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo sơ mi",
-            "image" : "data/images/men/3.jpg",
-            "price" : "120.000 đ"
+            "sale": "-0%",
+            "name": "Áo sơ mi",
+            "image": "data/images/men/3.jpg",
+            "price": "120.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần jean",
-            "image" : "data/images/men/4.jpg",
-            "price" : "200.000 đ"
+            "sale": "-0%",
+            "name": "Quần jean",
+            "image": "data/images/men/4.jpg",
+            "price": "200.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo khoác",
-            "image" : "data/images/men/5.jpg",
-            "price" : "150.000 đ"
+            "sale": "-0%",
+            "name": "Áo khoác",
+            "image": "data/images/men/5.jpg",
+            "price": "150.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo khoác da",
-            "image" : "data/images/men/6.jpg",
-            "price" : "500.000 đ"
+            "sale": "-0%",
+            "name": "Áo khoác da",
+            "image": "data/images/men/6.jpg",
+            "price": "500.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần tây",
-            "image" : "data/images/men/7.jpg",
-            "price" : "300.000 đ"
+            "sale": "-0%",
+            "name": "Quần tây",
+            "image": "data/images/men/7.jpg",
+            "price": "300.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo len",
-            "image" : "data/images/men/8.jpg",
-            "price" : "250.000 đ"
+            "sale": "-0%",
+            "name": "Áo len",
+            "image": "data/images/men/8.jpg",
+            "price": "250.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo hoodie",
-            "image" : "data/images/men/9.jpg",
-            "price" : "400.000 đ"
+            "sale": "-0%",
+            "name": "Áo hoodie",
+            "image": "data/images/men/9.jpg",
+            "price": "400.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần kaki",
-            "image" : "data/images/men/10.jpg",
-            "price" : "350.000 đ"
+            "sale": "-0%",
+            "name": "Quần kaki",
+            "image": "data/images/men/10.jpg",
+            "price": "350.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo polo",
-            "image" : "data/images/men/11.jpg",
-            "price" : "150.000 đ"
+            "sale": "-0%",
+            "name": "Áo polo",
+            "image": "data/images/men/11.jpg",
+            "price": "150.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần Jogger",
-            "image" : "data/images/men/12.jpg",
-            "price" : "280.000 đ"
+            "sale": "-0%",
+            "name": "Quần Jogger",
+            "image": "data/images/men/12.jpg",
+            "price": "280.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo nỉ",
-            "image" : "data/images/men/13.jpg",
-            "price" : "180.000 đ"
+            "sale": "-0%",
+            "name": "Áo nỉ",
+            "image": "data/images/men/13.jpg",
+            "price": "180.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo sơ mi trắng",
-            "image" : "data/images/men/14.jpg",
-            "price" : "220.000 đ"
+            "sale": "-0%",
+            "name": "Áo sơ mi trắng",
+            "image": "data/images/men/14.jpg",
+            "price": "220.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần lửng",
-            "image" : "data/images/men/15.jpg",
-            "price" : "180.000 đ"
+            "sale": "-0%",
+            "name": "Quần lửng",
+            "image": "data/images/men/15.jpg",
+            "price": "180.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo thun cổ tròn",
-            "image" : "data/images/men/16.jpg",
-            "price" : "70.000 đ"
+            "sale": "-0%",
+            "name": "Áo thun cổ tròn",
+            "image": "data/images/men/16.jpg",
+            "price": "70.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo vest",
-            "image" : "data/images/men/17.jpg",
-            "price" : "600.000 đ"
+            "sale": "-0%",
+            "name": "Áo vest",
+            "image": "data/images/men/17.jpg",
+            "price": "600.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần bò",
-            "image" : "data/images/men/18.jpg",
-            "price" : "250.000 đ"
+            "sale": "-0%",
+            "name": "Quần bò",
+            "image": "data/images/men/18.jpg",
+            "price": "250.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo len dài tay",
-            "image" : "data/images/men/19.jpg",
-            "price" : "280.000 đ"
+            "sale": "-0%",
+            "name": "Áo len dài tay",
+            "image": "data/images/men/19.jpg",
+            "price": "280.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo khoác phao",
-            "image" : "data/images/men/20.jpg",
-            "price" : "450.000 đ"
+            "sale": "-0%",
+            "name": "Áo khoác phao",
+            "image": "data/images/men/20.jpg",
+            "price": "450.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần shorts",
-            "image" : "data/images/men/21.jpg",
-            "price" : "120.000 đ"
+            "sale": "-0%",
+            "name": "Quần shorts",
+            "image": "data/images/men/21.jpg",
+            "price": "120.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo thun dài tay",
-            "image" : "data/images/men/22.jpg",
-            "price" : "80.000 đ"
+            "sale": "-0%",
+            "name": "Áo thun dài tay",
+            "image": "data/images/men/22.jpg",
+            "price": "80.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo sơ mi xanh",
-            "image" : "data/images/men/23.jpg",
-            "price" : "200.000 đ"
+            "sale": "-0%",
+            "name": "Áo sơ mi xanh",
+            "image": "data/images/men/23.jpg",
+            "price": "200.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Quần bơi",
-            "image" : "data/images/men/24.jpg",
-            "price" : "150.000 đ"
+            "sale": "-0%",
+            "name": "Quần bơi",
+            "image": "data/images/men/24.jpg",
+            "price": "150.000 đ",
+            "des": "Vải đẹp, chất lượng."
         },
         {
-            "name" : "Áo len cổ lọ",
-            "image" : "data/images/men/25.jpg",
-            "price" : "320.000 đ"
+            "sale": "-0%",
+            "name": "Áo len cổ lọ",
+            "image": "data/images/men/25.jpg",
+            "price": "320.000 đ",
+            "des": "Vải đẹp, chất lượng."
         }
     ]
 }

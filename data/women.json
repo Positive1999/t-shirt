@@ -5,7 +5,7 @@
             "name": "Áo thun trắng",
             "image": "data/images/women/1.jpg",
             "des": "Vải chất lượng , 100% như ảnh",
-            "price": 19.99
+            "price": "300.000 đ"
         },
         {
             "name": "Quần jeans đen",
@@ -15,32 +15,32 @@
         {
             "name": "Áo khoác nỉ xám",
             "image": "data/images/women/3.jpg",
-            "price": 29.99
+              "price": "300.000 đ"
         },
         {
             "name": "Váy hoa dài",
             "image": "data/images/women/4.jpg",
-            "price": 49.99
+              "price": "300.000 đ"
         },
         {
             "name": "Áo sơ mi trắng",
             "image": "data/images/women/5.jpg",
-            "price": 34.99
+              "price": "300.000 đ"
         },
         {
             "name": "Quần kaki xanh",
             "image": "data/images/women/6.jpg",
-            "price": 44.99
+              "price": "300.000 đ"
         },
         {
             "name": "Áo len đỏ",
             "image": "data/images/clothes/red-sweater.jpg",
-            "price": 24.99
+              "price": "300.000 đ"
         },
         {
             "name": "Đầm dạ hội đen",
             "image": "data/images/clothes/black-evening-dress.jpg",
-            "price": 59.99
+              "price": "300.000 đ"
         },
         {
             "name": "Áo phông đen",
