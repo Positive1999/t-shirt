@@ -8,99 +8,118 @@
             "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Quần jeans đen",
             "image": "data/images/women/2.jpg",
-            "price": 39.99
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo khoác nỉ xám",
             "image": "data/images/women/3.jpg",
-              "price": "300.000 đ"
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Váy hoa dài",
             "image": "data/images/women/4.jpg",
-              "price": "300.000 đ"
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo sơ mi trắng",
             "image": "data/images/women/5.jpg",
-              "price": "300.000 đ"
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Quần kaki xanh",
             "image": "data/images/women/6.jpg",
-              "price": "300.000 đ"
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo len đỏ",
-            "image": "data/images/clothes/red-sweater.jpg",
-              "price": "300.000 đ"
+            "image": "data/images/women/7.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Đầm dạ hội đen",
-            "image": "data/images/clothes/black-evening-dress.jpg",
-              "price": "300.000 đ"
+            "image": "data/images/women/8.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo phông đen",
-            "image": "data/images/clothes/black-t-shirt.jpg",
-            "price": 14.99
+            "image": "data/images/women/9.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Quần short jeans",
-            "image": "data/images/clothes/jeans-shorts.jpg",
-            "price": 29.99
+            "image": "data/images/women/10.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo khoác da nâu",
-            "image": "data/images/clothes/brown-leather-jacket.jpg",
-            "price": 79.99
+            "image": "data/images/women/11.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Váy xòe trắng",
-            "image": "data/images/clothes/white-flared-skirt.jpg",
-            "price": 39.99
+            "image": "data/images/women/12.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo len xám",
-            "image": "data/images/clothes/gray-sweater.jpg",
-            "price": 29.99
+            "image": "data/images/women/13.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo polo xanh dương",
-            "image": "data/images/clothes/blue-polo-shirt.jpg",
-            "price": 24.99
+            "image": "data/images/women/14.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Quần bò xanh",
-            "image": "data/images/clothes/blue-jeans.jpg",
-            "price": 49.99
+            "image": "data/images/women/15.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo phông trắng",
-            "image": "data/images/clothes/white-t-shirt.jpg",
-            "price": 14.99
+            "image": "data/images/women/16.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Đầm hoa vintage",
-            "image": "data/images/clothes/vintage-floral-dress.jpg",
-            "price": 54.99
+            "image": "data/images/women/17.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo khoác nỉ đen",
-            "image": "data/images/clothes/black-hoodie.jpg",
-            "price": 29.99
+            "image": "data/images/women/18.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Áo sơ mi xanh",
-            "image": "data/images/clothes/blue-shirt.jpg",
-            "price": 34.99
+            "image": "data/images/women/19.jpg",
+            "price": "300.000 đ"
         },
         {
+            "sale": "-0%",
             "name": "Quần tây đen",
-            "image": "data/images/clothes/black-dress-pants.jpg",
-            "price": 59.99
+            "image": "data/images/women/20.jpg",
+            "price": "300.000 đ"
         }
     ]
 }

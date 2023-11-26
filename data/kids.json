@@ -1,54 +1,144 @@
 {
-    "kids": [
-      {
-        "name": "Áo thun trắng",
-        "image": "data/images/clothes/children/shirt-white.jpg",
-        "price": 14.99
-      },
-      {
-        "name": "Quần jeans đen",
-        "image": "data/images/clothes/children/jeans-black.jpg",
-        "price": 24.99
-      },
-      {
-        "name": "Áo khoác nỉ xám",
-        "image": "data/images/clothes/children/hoodie-gray.jpg",
-        "price": 19.99
-      },
-      {
-        "name": "Váy hoa nhí",
-        "image": "data/images/clothes/children/floral-dress.jpg",
-        "price": 29.99
-      },
-      {
-        "name": "Áo sơ mi trắng",
-        "image": "data/images/clothes/children/white-shirt.jpg",
-        "price": 19.99
-      },
-      {
-        "name": "Quần shorts jeans",
-        "image": "data/images/clothes/children/jeans-shorts.jpg",
-        "price": 14.99
-      },
-      {
-        "name": "Áo len đỏ",
-        "image": "data/images/clothes/children/red-sweater.jpg",
-        "price": 16.99
-      },
-      {
-        "name": "Đầm dạo phố hồng",
-        "image": "data/images/clothes/children/pink-dress.jpg",
-        "price": 24.99
-      },
-      {
-        "name": "Áo phông đen",
-        "image": "data/images/clothes/children/black-t-shirt.jpg",
-        "price": 12.99
-      },
-      {
-        "name": "Quần kaki xanh",
-        "image": "data/images/clothes/children/green-khaki-pants.jpg",
-        "price": 19.99
-      }
-    ]
-  }
+  "kids": [
+    {
+      "sale": "-5%",
+      "name": "Áo khoác trẻ em",
+      "image": "data/images/kids/1.jpg",
+      "price": "150.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-5%",
+      "name": "Áo khoác trẻ em",
+      "image": "data/images/kids/2.jpg",
+      "price": "150.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-5%",
+      "name": "Áo khoác trẻ em",
+      "image": "data/images/kids/3.jpg",
+      "price": "150.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-5%",
+      "name": "Áo khoác trẻ em",
+      "image": "data/images/kids/4.jpg",
+      "price": "150.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/5.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Quần tây trẻ em",
+      "image": "data/images/kids/6.jpg",
+      "price": "300.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác nỉ xám trẻ em",
+      "image": "data/images/kids/7.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Váy xòe trắng trẻ em",
+      "image": "data/images/kids/8.jpg",
+      "price": "300.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-6%",
+      "name": "Áo thun trắng trẻ em",
+      "image": "data/images/kids/9.jpg",
+      "price": "300.000 đ",
+      "des": "Vải chất lượng, 100% như ảnh"
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác nỉ xám trẻ em",
+      "image": "data/images/kids/10.jpg",
+      "price": "300.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Váy xòe trắng trẻ em",
+      "image": "data/images/kids/11.jpg",
+      "price": "300.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-6%",
+      "name": "Áo thun trắng trẻ em",
+      "image": "data/images/kids/12.jpg",
+      "price": "300.000 đ",
+      "des": "Vải chất lượng, 100% như ảnh"
+    },
+    {
+      "sale": "-5%",
+      "name": "Áo khoác trẻ em",
+      "image": "data/images/kids/13.jpg",
+      "price": "150.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/14.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/15.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/16.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/17.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/18.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/19.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    },
+    {
+      "sale": "-10%",
+      "name": "Áo khoác da trẻ em",
+      "image": "data/images/kids/20.jpg",
+      "price": "500.000 đ",
+      "des": "Vải đẹp, chất lượng tốt! Cam kết đổi trả 100% khi không đúng như ảnh."
+    }
+  ]
+}
