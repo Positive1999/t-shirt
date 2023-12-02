@@ -59,7 +59,8 @@ function renderCartItems() {
       
         // Cập nhật tổng giá trị đơn hàng sau khi xóa
         total -= priceValue;
-        totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
+        totalPrice.textContent = 
+        'Tổng đơn hàng: ' + formatMoney(total);
       });
 
       infoProduct.appendChild(productDes);
@@ -74,10 +75,55 @@ function renderCartItems() {
       container.appendChild(productDiv);
     });
 
-    totalPrice.textContent = 'Tổng đơn hàng: ' + formatMoney(total);
+    totalPrice.textContent = 'Tổng đơn hàng:' + formatMoney(total);
     if (products && products.length > 0) {
+
+      // form nhập thông tin khách hàng
+      var form = document.createElement("div");
+      form.classList.add('form-order');
+
+      var formOrderTitle = document.createElement("h4");
+      formOrderTitle.textContent= 'Điền thông tin nhận hàng';
+      formOrderTitle.style.textAlign= 'center';
+
+      var formName = document.createElement("input");
+      formName.classList.add("inod", "col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
+      formName.type = "text";
+      formName.placeholder='Nhập tên';
+
+      var formPhone = document.createElement("input");
+      formPhone.classList.add("inod", "col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
+      formPhone.type = "text";
+      formPhone.placeholder='Nhập số điện thoại';
+
+      var formAddress = document.createElement("input");
+      formAddress.classList.add("col-sx-12", "col-sm-12", "col-md-12", "col-lg-12")
+      formAddress.type = "text";
+      formAddress.placeholder='Nhập địa chỉ nhận hàng';
+      //hết form nhập thông tin khách hàng
+
+      form.appendChild(formOrderTitle);
+      form.appendChild(formName);
+      form.appendChild(formPhone);
+      form.appendChild(formAddress);
+
+
       var bookProduct = document.createElement("button");
       bookProduct.textContent = ' Đặt hàng';
+      bookProduct.addEventListener('click',()=>{
+        if(formName.value === '' && formPhone.value === '' && formAddress.value === ''){
+          alert('Điền đầy đủ thông tin');
+        }
+        else{
+          alert('Đặt hàng thành công !');
+          formName.value = '';
+          formPhone.value = '';
+          formAddress.value = '';
+        }
+      })
+
+    
+      bookProducts.appendChild(form);
       bookProducts.appendChild(bookProduct);
     } else {
       bookProducts.textContent = '';
@@ -86,7 +132,7 @@ function renderCartItems() {
     var emptyCartMessage = document.createElement("p");
     emptyCartMessage.classList.add('cart-empty');
     emptyCartMessage.innerHTML = 
-    `<i class="fa fa-cart-shopping"></i> giỏ hàng trống !`;
+    `<i class="fa fa-cart-shopping"></i> Giỏ hàng trống !`;
 
     container.appendChild(emptyCartMessage);
   }
@@ -102,7 +148,4 @@ function formatMoney(amount) {
 }
 
 renderCartItems();
-
-
-
 

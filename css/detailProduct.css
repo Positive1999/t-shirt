@@ -63,9 +63,6 @@
   background-color: darkred;
 }
 
-
-
-
 #totalPrice, #bookProducts{
   padding:.9% 10%;
 }
@@ -82,6 +79,21 @@
   width: 100%;
 }
 
+
+/* form-order */
+.form-order{
+  border: 1px solid rgb(155, 155, 155);
+  padding:5% ;
+  margin-bottom: 30px;
+}
+
+.form-order .inod{
+  margin-bottom: 15px;
+}
+
+
+
+/* empty cart */
 .fa-cart-shopping{
   color:orange;
   font-size: 22px;
