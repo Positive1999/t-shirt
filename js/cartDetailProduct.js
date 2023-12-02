@@ -83,7 +83,7 @@ function renderCartItems() {
       form.classList.add('form-order');
 
       var formOrderTitle = document.createElement("h4");
-      formOrderTitle.textContent= 'Điền thông tin nhận hàng';
+      formOrderTitle.textContent= 'Vui lòng điền đầy đủ thông tin';
       formOrderTitle.style.textAlign= 'center';
 
       var formName = document.createElement("input");
