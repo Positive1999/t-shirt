@@ -21,7 +21,7 @@ function renderCartItems() {
       var infoProduct = document.createElement('div');
       infoProduct.classList.add("col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
 
-      
+
       var productDes = document.createElement("i");
       var productName = document.createElement("h5");
       var productQuantity = document.createElement("input");
@@ -44,10 +44,10 @@ function renderCartItems() {
       productRemove.addEventListener('click', function () {
         // Xóa sản phẩm khỏi giao diện
         productDiv.remove();
-      
+
         // Xóa sản phẩm khỏi mảng bằng cách sử dụng index
         products.splice(index, 1);
-      
+
         // Kiểm tra số lượng sản phẩm trong mảng
         if (products.length === 0) {
           // Xóa khóa "cartItems" khỏi localStorage
@@ -56,11 +56,11 @@ function renderCartItems() {
           // Ghi đè lên localStorage với mảng products mới
           localStorage.setItem("cartItems", JSON.stringify(products));
         }
-      
+
         // Cập nhật tổng giá trị đơn hàng sau khi xóa
         total -= priceValue;
-        totalPrice.textContent = 
-        'Tổng đơn hàng: ' + formatMoney(total);
+        totalPrice.textContent =
+          'Tổng đơn hàng: ' + formatMoney(total);
       });
 
       infoProduct.appendChild(productDes);
@@ -83,23 +83,23 @@ function renderCartItems() {
       form.classList.add('form-order');
 
       var formOrderTitle = document.createElement("h4");
-      formOrderTitle.textContent= 'Vui lòng điền đầy đủ thông tin';
-      formOrderTitle.style.textAlign= 'center';
+      formOrderTitle.textContent = 'Vui lòng điền đầy đủ thông tin';
+      formOrderTitle.style.textAlign = 'center';
 
       var formName = document.createElement("input");
       formName.classList.add("inod", "col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
       formName.type = "text";
-      formName.placeholder='Nhập tên';
+      formName.placeholder = 'Nhập tên';
 
       var formPhone = document.createElement("input");
       formPhone.classList.add("inod", "col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
       formPhone.type = "text";
-      formPhone.placeholder='Nhập số điện thoại';
+      formPhone.placeholder = 'Nhập số điện thoại';
 
       var formAddress = document.createElement("input");
       formAddress.classList.add("col-sx-12", "col-sm-12", "col-md-12", "col-lg-12")
       formAddress.type = "text";
-      formAddress.placeholder='Nhập địa chỉ nhận hàng';
+      formAddress.placeholder = 'Nhập địa chỉ nhận hàng';
       //hết form nhập thông tin khách hàng
 
       form.appendChild(formOrderTitle);
@@ -110,19 +110,22 @@ function renderCartItems() {
 
       var bookProduct = document.createElement("button");
       bookProduct.textContent = ' Đặt hàng';
-      bookProduct.addEventListener('click',()=>{
-        if(formName.value === '' && formPhone.value === '' && formAddress.value === ''){
+      bookProduct.addEventListener('click', () => {
+        var check = localStorage.getItem("cartItems");
+        var count = JSON.parse(check).length;
+
+        if (formName.value === '' || formPhone.value === '' || formAddress.value === '') {
           alert('Điền đầy đủ thông tin');
         }
-        else{
+        else if (count > 0) {
           alert('Đặt hàng thành công !');
           formName.value = '';
           formPhone.value = '';
           formAddress.value = '';
+          localStorage.removeItem("cartItems");
         }
+        
       })
-
-    
       bookProducts.appendChild(form);
       bookProducts.appendChild(bookProduct);
     } else {
@@ -131,8 +134,8 @@ function renderCartItems() {
   } else {
     var emptyCartMessage = document.createElement("p");
     emptyCartMessage.classList.add('cart-empty');
-    emptyCartMessage.innerHTML = 
-    `<i class="fa fa-cart-shopping"></i> Giỏ hàng trống !`;
+    emptyCartMessage.innerHTML =
+      `<i class="fa fa-cart-shopping"></i> Giỏ hàng trống !`;
 
     container.appendChild(emptyCartMessage);
   }
