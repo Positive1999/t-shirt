@@ -1,5 +1,6 @@
 var imageSources = [
-    "../data/images/banner-shared/banner3.jpg"
+    "../data/images/banner-shared/banner4.png",
+    "../data/images/banner-shared/banner4.jpg"
   ];
   
   var currentIndex = 0;
