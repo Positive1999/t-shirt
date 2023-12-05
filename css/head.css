@@ -47,4 +47,7 @@
     overflow: auto;
   }
 
-  
+  /* them css cho class active */
+  .active{
+    font-weight: bolder;
+  }

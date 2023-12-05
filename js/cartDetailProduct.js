@@ -83,23 +83,23 @@ function renderCartItems() {
       form.classList.add('form-order');
 
       var formOrderTitle = document.createElement("h4");
-      formOrderTitle.textContent = 'Vui lòng điền đầy đủ thông tin';
+      formOrderTitle.textContent = 'Thông tin khách hàng';
       formOrderTitle.style.textAlign = 'center';
 
       var formName = document.createElement("input");
       formName.classList.add("inod", "col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
       formName.type = "text";
-      formName.placeholder = 'Nhập tên';
+      formName.placeholder = 'Nhập tên của bạn: ';
 
       var formPhone = document.createElement("input");
       formPhone.classList.add("inod", "col-sx-12", "col-sm-12", "col-md-6", "col-lg-6");
       formPhone.type = "text";
-      formPhone.placeholder = 'Nhập số điện thoại';
+      formPhone.placeholder = 'Nhập số điện thoại : ';
 
       var formAddress = document.createElement("input");
       formAddress.classList.add("col-sx-12", "col-sm-12", "col-md-12", "col-lg-12")
       formAddress.type = "text";
-      formAddress.placeholder = 'Nhập địa chỉ nhận hàng';
+      formAddress.placeholder = 'Nhập địa chỉ nhận hàng :';
       //hết form nhập thông tin khách hàng
 
       form.appendChild(formOrderTitle);

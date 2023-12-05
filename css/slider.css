@@ -1,0 +1,8 @@
+.slider{
+    margin-top: calc(75px + 1rem);
+}
+.slider img{
+    width: 100%;
+    height:auto;
+   
+}

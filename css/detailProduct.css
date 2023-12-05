@@ -91,6 +91,14 @@
   margin-bottom: 15px;
 }
 
+input{
+  border: none;
+  outline: none;
+}
+
+input:focus{
+  border-bottom: 1px solid rgba(0, 128, 0);
+}
 
 
 /* empty cart */
